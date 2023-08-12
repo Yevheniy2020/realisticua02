@@ -1,0 +1,61 @@
+@import "../constants/variables";
+
+.mission{
+  padding-bottom: 150px;
+  background-color: $back-color;
+  color: $base-color;
+  &-wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  &-left{
+    img{
+      max-width: 445px;
+      width: 100%;
+      height: auto;
+    }
+  }
+  &-right{
+    max-width: 634px;
+    &__title{
+      display: flex;
+      gap: 20px;
+      align-items: end;
+      padding-bottom: 60px;
+      span:nth-child(1){
+        font-size: 128px;
+        font-weight: 400;
+        line-height: 154px;
+      }
+      span:nth-child(2){
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+      }
+    }
+    &__text{
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 28px;
+      padding-bottom: 60px;
+
+    }
+    &__subtitle{
+      display: flex;
+      gap: 20px;
+      align-items: end;
+      flex-direction: row-reverse;
+      span:nth-child(1){
+        font-size: 64px;
+        font-weight: 400;
+        line-height: 77px;
+      }
+      span:nth-child(2){
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+      }
+    }
+  }
+}

@@ -1,8 +1,10 @@
+@import "../constants/variables";
+
 .project{
-  background-color: #1B1C1D;
+  background-color: $back-color;
   padding-top: 141px;
   overflow: hidden;
-  color: #F5F5F5;
+  color: $base-color;
   &-main{
     &__title{
       text-transform: uppercase;
