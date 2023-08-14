@@ -1,18 +1,17 @@
-import {tns} from "tiny-slider";
-
-document.querySelector('.header-wrapper__logo').addEventListener('mouseout', function()
+const headerWrapper = document.querySelector('.header-wrapper__logo');
+headerWrapper.addEventListener('mouseout', function()
 {
 
     document.querySelector('.header-wrapper__blur').style.filter = 'blur(0px)';
     document.querySelector('.header-wrapper__blur').style.zIndex = '0';
-}, false);
+});
 
 
-document.querySelector('.header-wrapper__logo').addEventListener('mouseover', function()
+headerWrapper.addEventListener('mouseover', function()
 {
     document.querySelector('.header-wrapper__blur').style.filter = 'blur(1.5rem)';
     document.querySelector('.header-wrapper__blur').style.zIndex = '10';
-}, false);
+});
 
 const slider = tns({
     container: '.my-slider',

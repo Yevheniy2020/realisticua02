@@ -2,7 +2,6 @@
 .ukrainians {
   width: 100%;
   height: 509px;
-  color: $base-color;
   background: url('../../img/ukrainians/1.jpg') 50% 10% / cover no-repeat;
   &__title {
     max-width: 856px;
@@ -19,13 +18,6 @@
     align-items: center;
   }
 }
-//@media (max-width: 1400px) {
-//  .ukrainians {
-//    background-size:contain;
-//
-//  }
-//}
-
 
 @media (max-width: 590px) {
 
