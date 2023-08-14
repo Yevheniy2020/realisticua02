@@ -1,3 +1,5 @@
+import {tns} from "tiny-slider";
+
 document.querySelector('.header-wrapper__logo').addEventListener('mouseout', function()
 {
 

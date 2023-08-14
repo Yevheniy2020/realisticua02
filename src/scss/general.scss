@@ -1,39 +1,19 @@
+@import "./reset/reset";
+@import "./reset/theme";
+
 @import "constants/variables";
 
-.container {
-  max-width: 1230px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 15px;
-}
+@import "components/btn-donate";
+@import "components/containers";
 
-.btn-donate{
-  background-color: rgba(126, 36, 36, 1);;
-  width: 188px;
-  height: 44px;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 28px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 20px;
-  cursor: pointer;
-  color: $base-color;
-}
-
-
-
-
-@import "cancel/cancel";
 @import "blocks/header";
 @import "blocks/project";
 @import "blocks/mission";
 @import "blocks/plan";
-@import "blocks/emotions";
-@import "blocks/donate";
-@import "blocks/team";
-@import "blocks/ukrainians";
-@import "blocks/partners";
-@import "blocks/footer";
-@import "blocks/privacy";
+//@import "blocks/emotions";
+//@import "blocks/donate";
+//@import "blocks/team";
+//@import "blocks/ukrainians";
+//@import "blocks/partners";
+//@import "blocks/footer";
+//@import "blocks/privacy";

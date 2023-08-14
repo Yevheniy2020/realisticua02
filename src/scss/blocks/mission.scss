@@ -3,10 +3,7 @@
 .mission{
   padding-bottom: 150px;
   background-color: $back-color;
-  color: $base-color;
-  &-wrapper{
-    display: flex;
-    justify-content: center;
+  &-flex{
     gap: 30px;
   }
   &-left{

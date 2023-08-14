@@ -1,0 +1,6 @@
+@import "../constants/variables";
+*,
+*::before,
+*::after {
+  color: $base-color;
+}
