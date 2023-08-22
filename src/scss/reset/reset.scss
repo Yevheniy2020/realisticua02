@@ -1,10 +1,89 @@
-//@font-face {
-//  font-family: Bicubik;
-//  src: local("Bicubik"), url(../fonts/bicubik.woff2) format("woff2"), url(../fonts/bicubik.woff) format("woff"), url(../fonts/bicubik.ttf) format("truetype");
-//  font-weight: 400;
-//  font-style: normal;
-//}
 
+//font-family: "Neuropol", sans-serif;
+
+@font-face {
+  font-family: Neuropol;
+  font-display: swap;
+  src: url("../fonts/neuropol.eot");
+  src: local("O"), url("../fonts/neuropol.woff") format("woff"),
+  url("../fonts/neuropol.woff2") format("woff2"),
+  url("../fonts/neuropol.ttf") format("truetype"),
+  url("../fonts/neuropol.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: FixelText;
+  font-display: swap;
+  src: local("O"), url("../fonts/FixelText-Black.woff2") format("woff2"),
+  url("../fonts/FixelText-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: FixelText;
+  font-display: swap;
+  src: local("O"), url("../fonts/FixelText-Bold.woff2") format("woff2"),
+  url("../fonts/FixelText-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: FixelText;
+  font-display: swap;
+  src: local("O"), url("../fonts/FixelText-ExtraLight.woff2") format("woff2"),
+  url("../fonts/FixelText-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: FixelText;
+  font-display: swap;
+  src: local("O"), url("../fonts/FixelText-Light.woff2") format("woff2"),
+  url("../fonts/FixelText-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: FixelText;
+  font-display: swap;
+  src: local("O"), url("../fonts/FixelText-Medium.woff2") format("woff2"),
+  url("../fonts/FixelText-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: FixelText;
+  font-display: swap;
+  src: local("O"), url("../fonts/FixelText-Regular.woff2") format("woff2"),
+  url("../fonts/FixelText-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: FixelText;
+  font-display: swap;
+  src: local("O"), url("../fonts/FixelText-SemiBold.woff2") format("woff2"),
+  url("../fonts/FixelText-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: FixelText;
+  font-display: swap;
+  src: local("O"), url("../fonts/FixelText-Thin.woff2") format("woff2"),
+  url("../fonts/FixelText-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
 * {
   padding: 0;
   margin: 0;
