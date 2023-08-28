@@ -1,5 +1,9 @@
 @import "../constants/variables";
+@import "../constants/breakpoints";
+
 .emotions{
+  font-family: "Neuropol", sans-serif;
+
   text-transform: uppercase;
   text-align: center;
   background-color: $base-color;
@@ -10,6 +14,7 @@
     line-height: 33px;
     text-align: center;
     color: $back-color;
+    font-family: "FixelText", sans-serif;
 
   }
   &__title{
@@ -19,4 +24,16 @@
     color: $back-color;
 
   }
+}
+
+@media (max-width: $mobileMedium) {
+ .emotions{
+   &__text{
+     font-size: 15px;
+     line-height: 20.7px;
+   }
+   &__title{
+     font-size: 18px;
+   }
+ }
 }

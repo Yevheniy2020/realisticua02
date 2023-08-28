@@ -1,5 +1,9 @@
 @import "../constants/variables";
+@import "../constants/breakpoints";
+
 .ukrainians {
+  font-family: "Neuropol", sans-serif;
+
   width: 100%;
   height: 509px;
   background: url('../../img/ukrainians/1.jpg') 50% 10% / cover no-repeat;
@@ -16,16 +20,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-transform: uppercase;
   }
 }
 
-@media (max-width: 590px) {
+@media (max-width: $mobileSemiMedium) {
 
   .ukrainians {
-    //background-position-x: 67%;
+    width: 100%;
+    height: 320px;
+    background: url('../../img/ukrainians/9.jpg') 50% 10% / cover no-repeat;
     &__title {
-      font-size: 43px;
-      line-height: 49px;
+      font-size: 20px;
+      line-height: 24px;
+      height: 320px;
+      //text-align: center;
     }
   }
 }

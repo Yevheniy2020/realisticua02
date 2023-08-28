@@ -1,6 +1,8 @@
 @import "../constants/variables";
+@import "../constants/breakpoints";
 
 .plan {
+  font-family: "Neuropol", sans-serif;
   display: flex;
   overflow: hidden;
   background-color: $back-color;
@@ -32,6 +34,7 @@
       font-size: 24px;
       font-weight: 400;
       line-height: 29px;
+
     }
 
     &__text2 {
@@ -51,6 +54,8 @@
       font-size: 16px;
       font-weight: 400;
       line-height: 23px;
+      font-family: "FixelText", sans-serif;
+
     }
     &_exhibition {
       background: #7E2424;
@@ -104,7 +109,7 @@
   }
 }
 
-@media (max-width: 1860px) {
+@media (max-width: $desktopLarge - 100) {
   .plan{
     .plan {
       &-item {
@@ -119,35 +124,31 @@
   }
 }
 
-@media (max-width: 1441px) {
-  .plan{
+
+@media (max-width: $desktopSemiMedium) {
+  .plan {
     &-item {
-      &_content {
-        img {
-          width: auto;
-          height: 100%;
-        }
-      }
-    }
-    &-offline {
-      min-width: auto;
-      max-width: 480px;
-      width: 100%;
-    }
-    &-metauniverse {
-      min-width: auto;
-      max-width: 480px;
-      width: 100%;
-    }
-    &-city {
-      min-width: auto;
-      max-width: 480px;
-      width: 100%;
+      justify-content: center;
+      padding-left: 0;
     }
   }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: $desktop) {
+  .plan {
+    &-item {
+      justify-content: center;
+      padding-left: 0;
+
+      &__text2 {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: $tablet) {
   .plan {
     display: block;
     &-item{
@@ -155,6 +156,9 @@
         &:hover {
           width: 100%;
         }
+      }
+      &__text2 {
+        font-size: 24px;
       }
       &_metauniverse {
         &:hover {
@@ -190,12 +194,18 @@
     }
   }
 }
-
-@media (max-width: 426px) {
+@media (max-width: $mobileMedium) {
   .plan{
     &-item{
+      height: 420px;
       &__text {
-        font-size: 28px;
+        font-size: 15px;
+      }
+      &__descr{
+        font-size: 14px;
+      }
+      &_content{
+        padding: 0 15px;
       }
     }
   }
