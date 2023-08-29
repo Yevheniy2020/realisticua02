@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="827cc6cd-286a-4503-9bff-754a7067dd08" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="dist" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2S6t6NpukvVf6plJcQpQE8lXnyn" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/duder/OneDrive/Рабочий стол/realistic/dist/img/mission",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\duder\OneDrive\Рабочий стол\realistic\dist\img\mission" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\duder\OneDrive\Рабочий стол\realistic\src\img\mission" />
+      <recent name="C:\Users\duder\OneDrive\Рабочий стол\realistic\src\scss\blocks\header" />
+      <recent name="C:\Users\duder\OneDrive\Рабочий стол\realisticua02\dist" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="827cc6cd-286a-4503-9bff-754a7067dd08" name="Changes" comment="" />
+      <created>1688478682390</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1688478682390</updated>
+      <workItem from="1688478683325" duration="30000" />
+      <workItem from="1689192363043" duration="39000" />
+      <workItem from="1689712240878" duration="2074000" />
+      <workItem from="1689784436601" duration="5997000" />
+      <workItem from="1689841515994" duration="4795000" />
+      <workItem from="1689846632846" duration="4666000" />
+      <workItem from="1691690101652" duration="151000" />
+      <workItem from="1691690265140" duration="52000" />
+      <workItem from="1691690334502" duration="308000" />
+      <workItem from="1691690783585" duration="692000" />
+      <workItem from="1691691540167" duration="637000" />
+      <workItem from="1691841095805" duration="75000" />
+      <workItem from="1691841625699" duration="19783000" />
+      <workItem from="1691921060925" duration="21668000" />
+      <workItem from="1692004862712" duration="6189000" />
+      <workItem from="1692045811450" duration="203000" />
+      <workItem from="1692258725660" duration="607000" />
+      <workItem from="1692301992805" duration="34000" />
+      <workItem from="1692389038629" duration="1179000" />
+      <workItem from="1692442994626" duration="8000" />
+      <workItem from="1692702648405" duration="101000" />
+      <workItem from="1692717358895" duration="8000" />
+      <workItem from="1693054667681" duration="3730000" />
+      <workItem from="1693134493727" duration="18221000" />
+      <workItem from="1693176897329" duration="409000" />
+      <workItem from="1693221885364" duration="20453000" />
+      <workItem from="1693303038494" duration="1577000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
