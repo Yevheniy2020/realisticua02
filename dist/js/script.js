@@ -1,20 +1,41 @@
 const headerWrapper = document.querySelector('.header-wrapper__logo');
+const headerBlur = document.querySelector('.header-wrapper__blur');
+const exhibitionWrapper = document.querySelector('.exhibition-container');
+const exhibitionTitle = document.querySelector('.exhibition__title');
+const exhibitionBlur = document.querySelector('.exhibition__blur');
+const teleportBtn = document.querySelector('.teleport-btn');
 const mediaQuery = window.matchMedia('(max-width: 768px)');
+
 if(!mediaQuery.matches){
     headerWrapper.addEventListener('mouseout', function()
     {
-
-        document.querySelector('.header-wrapper__blur').style.filter = 'blur(0px)';
-        document.querySelector('.header-wrapper__blur').style.zIndex = '0';
+        headerBlur.style.filter = 'blur(0px)';
+        headerBlur.style.zIndex = '0';
     });
-
 
     headerWrapper.addEventListener('mouseover', function()
     {
-        document.querySelector('.header-wrapper__blur').style.filter = 'blur(1.5rem)';
-        document.querySelector('.header-wrapper__blur').style.zIndex = '10';
+        headerBlur.style.filter = 'blur(1.5rem)';
+        headerBlur.style.zIndex = '10';
+    });
+}
+
+if(!mediaQuery.matches){
+    exhibitionWrapper.addEventListener('mouseout', function()
+    {
+
+        exhibitionBlur.style.filter = 'blur(0px)';
+        exhibitionTitle.style.opacity = '0';
+        teleportBtn.style.opacity = '1';
     });
 
+
+    exhibitionWrapper.addEventListener('mouseover', function()
+    {
+        exhibitionBlur.style.filter = 'blur(5px)';
+        exhibitionTitle.style.opacity = '1';
+        teleportBtn.style.opacity = '0';
+    });
 }
 
 
