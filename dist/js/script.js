@@ -36,6 +36,9 @@ if(!mediaQuery.matches){
         exhibitionTitle.style.opacity = '1';
         teleportBtn.style.opacity = '0';
     });
+}else{
+    exhibitionBlur.style.filter = 'blur(5px)';
+    exhibitionTitle.style.opacity = '1';
 }
 
 
