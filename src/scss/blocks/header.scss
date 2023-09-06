@@ -92,7 +92,7 @@
     width: 100%;
     height: 100vh;
     &__logo{
-        z-index: 100000;
+        z-index: 100;
         max-width: 700px;
         padding: 0 15px;
         width: 100%;
@@ -116,6 +116,17 @@
       width: 100%;
       height: 100%;
       transition: 0.3s linear all;
+    }
+
+    &__burger {
+      background-color: #AE4C4C;
+      position: absolute;
+      top: -100%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 100;
+      transition: 0.5s linear all;
     }
   }
 }

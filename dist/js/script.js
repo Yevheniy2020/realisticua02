@@ -5,6 +5,14 @@ const exhibitionTitle = document.querySelector('.exhibition__title');
 const exhibitionBlur = document.querySelector('.exhibition__blur');
 const teleportBtn = document.querySelector('.teleport-btn');
 const mediaQuery = window.matchMedia('(max-width: 768px)');
+const headerBurger = document.querySelector('.header-nav__burger');
+const headerWrapperBurger = document.querySelector('.header-wrapper__burger');
+
+headerBurger.addEventListener('click', function()
+{
+
+    headerWrapperBurger.style.top = '0';
+});
 
 if(!mediaQuery.matches){
     headerWrapper.addEventListener('mouseout', function()
@@ -53,11 +61,9 @@ const slider = tns({
         1600: {
             edgePadding: 0,
             gutter: 0,
-
             items: 5
         },
         1400: {
-            // edgePadding: 50,
             edgePadding: 0,
             gutter: 0,
             items: 4
@@ -79,16 +85,12 @@ const slider = tns({
             items:3
         },
         550: {
-            // edgePadding: 100,
-            // gutter: 100,
             edgePadding: 50,
             items:2
         },
         480: {
-            // edgePadding: 40,
             gutter: 0,
             items:2
-
         },
         375: {
             edgePadding: 0,
