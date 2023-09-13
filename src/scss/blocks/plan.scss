@@ -72,6 +72,19 @@
           display: none;
         }
       }
+      &:focus {
+        width: 250%;
+        background: rgba(0, 0, 0, 0);
+        .plan-item__descr {
+          display: block;
+        }
+        .plan-item__text {
+          display: block;
+        }
+        .plan-item__text2 {
+          display: none;
+        }
+      }
     }
     &_metauniverse {
       background: #CF6565;
