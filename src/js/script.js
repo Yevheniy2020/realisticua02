@@ -6,12 +6,17 @@ const exhibitionBlur = document.querySelector('.exhibition__blur');
 const teleportBtn = document.querySelector('.teleport-btn');
 const mediaQuery = window.matchMedia('(max-width: 768px)');
 const headerBurger = document.querySelector('.header-nav__burger');
-const headerWrapperBurger = document.querySelector('.header-wrapper__burger');
-
+const headerWrapperMenu = document.querySelector('.header-wrapper__menu');
+const headerCloseMenu = document.querySelector('.menu-header__close\n');
 headerBurger.addEventListener('click', function()
 {
 
-    headerWrapperBurger.style.top = '0';
+    headerWrapperMenu.style.top = '0';
+});
+headerCloseMenu.addEventListener('click', function()
+{
+
+    headerWrapperMenu.style.top = '-100%';
 });
 
 if(!mediaQuery.matches){

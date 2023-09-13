@@ -1,5 +1,6 @@
 @import "../constants/variables";
 @import "../constants/breakpoints";
+
 .header{
   font-family: "Neuropol", sans-serif;
   width: 100%;
@@ -118,7 +119,7 @@
       transition: 0.3s linear all;
     }
 
-    &__burger {
+    &__menu {
       background-color: #AE4C4C;
       position: absolute;
       top: -100%;
@@ -127,6 +128,39 @@
       height: 100%;
       z-index: 100;
       transition: 0.5s linear all;
+      .menu-header{
+        padding-top: 65px;
+        font-family: "FixelText", sans-serif;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__close{
+          font-size: 32px;
+          font-weight: 400;
+          line-height: 44px;
+          color: $back-color;
+          cursor: pointer;
+        }
+        &__logo{
+          font-size: 32px;
+          font-weight: 400;
+          line-height: 44px;
+          color: $back-color;
+        }
+      }
+      .menu-nav{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding-top: 50px;
+        &__item{
+          color: $back-color;
+          font-family: "Neuropol", sans-serif;
+          font-size: 32px;
+          font-weight: 400;
+          line-height: 38px;
+        }
+      }
     }
   }
 }
@@ -153,6 +187,27 @@
     height: 300px;
     &-wrapper {
       height: 300px;
+
+      &__menu {
+        height: 500px;
+        .menu-header{
+          padding-top: 25px;
+          &__close{
+
+          }
+          &__logo{
+            display: none;
+          }
+        }
+        .menu-nav{
+          padding-top: 0;
+
+          gap: 15px;
+          &__item{
+            font-size: 18px;
+          }
+        }
+      }
     }
     &-bottom{
       padding-bottom: 20px;
