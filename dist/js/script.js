@@ -12,7 +12,13 @@ const headerCloseMenu = document.querySelector('.menu-header__close');
 const exhibition = document.querySelector('.plan-item_exhibition');
 const metauniverse = document.querySelector('.plan-item_metauniverse');
 const city = document.querySelector('.plan-item_city');
+let planItemDescrExhibition =  document.querySelector('.plan-item_exhibition .plan-item__descr');
+let planItemTextExhibition = document.querySelector('.plan-item_exhibition .plan-item__text');
+let planItemText2Exhibition =  document.querySelector('.plan-item__text2');
 
+const planItemDescr = document.querySelector('.plan-item_metauniverse .plan-item__descr');
+const planItemText = document.querySelector('.plan-item_metauniverse .plan-item__text');
+const planItemText2 = document.querySelector('.plan-item_metauniverse .plan-item__text2');
 headerBurger.addEventListener('click', function()
 {
 
@@ -63,44 +69,29 @@ if(!mediaQuery.matches){
     exhibition.addEventListener('click', function () {
         exhibition.style.width = '100%';
         exhibition.style.background = 'rgba(0, 0, 0, 0)';
-        const planItemDescr = document.querySelector('.plan-item__descr');
-        const planItemText = document.querySelector('.plan-item__text');
-        if (planItemDescr && planItemText) {
-            planItemDescr.style.display = 'block';
-            planItemText.style.display = 'block';
-        }
-        const planItemText2 = document.querySelector('.plan-item__text2');
-        if (planItemText2) {
-            planItemText2.style.display = 'none';
-        }
+        planItemDescrExhibition.style.display = 'block';
+        planItemTextExhibition.style.display = 'block';
+        planItemText2Exhibition.style.display = 'none';
     });
     metauniverse.addEventListener('click', function () {
+
         metauniverse.style.width = '100%';
         metauniverse.style.background = 'rgba(0, 0, 0, 0)';
-        const planItemDescr = document.querySelector('.plan-item__descr');
-        const planItemText = document.querySelector('.plan-item__text');
-        if (planItemDescr && planItemText) {
-            planItemDescr.style.display = 'block';
-            planItemText.style.display = 'block';
-        }
-        const planItemText2 = document.querySelector('.plan-item__text2');
-        if (planItemText2) {
-            planItemText2.style.display = 'none';
-        }
+        planItemDescr.style.display = 'block';
+        planItemText.style.display = 'block';
+        planItemText2.style.display = 'none';
+
     });
     city.addEventListener('click', function () {
+        const planItemDescr = document.querySelector('.plan-item_city .plan-item__descr');
+        const planItemText = document.querySelector('.plan-item_city .plan-item__text');
+        const planItemText2 = document.querySelector('.plan-item_city .plan-item__text2');
         city.style.width = '100%';
         city.style.background = 'rgba(0, 0, 0, 0)';
-        const planItemDescr = document.querySelector('.plan-item__descr');
-        const planItemText = document.querySelector('.plan-item__text');
-        if (planItemDescr && planItemText) {
-            planItemDescr.style.display = 'block';
-            planItemText.style.display = 'block';
-        }
-        const planItemText2 = document.querySelector('.plan-item__text2');
-        if (planItemText2) {
-            planItemText2.style.display = 'none';
-        }
+        planItemDescr.style.display = 'block';
+        planItemText.style.display = 'block';
+        planItemText2.style.display = 'none';
+
     });
 }
 
