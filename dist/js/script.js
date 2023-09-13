@@ -7,7 +7,12 @@ const teleportBtn = document.querySelector('.teleport-btn');
 const mediaQuery = window.matchMedia('(max-width: 768px)');
 const headerBurger = document.querySelector('.header-nav__burger');
 const headerWrapperMenu = document.querySelector('.header-wrapper__menu');
-const headerCloseMenu = document.querySelector('.menu-header__close\n');
+const headerCloseMenu = document.querySelector('.menu-header__close');
+
+const exhibition = document.querySelector('.plan-item_exhibition');
+const metauniverse = document.querySelector('.plan-item_metauniverse');
+const city = document.querySelector('.plan-item_city');
+
 headerBurger.addEventListener('click', function()
 {
 
@@ -31,6 +36,8 @@ if(!mediaQuery.matches){
         headerBlur.style.filter = 'blur(1.5rem)';
         headerBlur.style.zIndex = '10';
     });
+
+
 }
 
 if(!mediaQuery.matches){
@@ -52,6 +59,49 @@ if(!mediaQuery.matches){
 }else{
     exhibitionBlur.style.filter = 'blur(5px)';
     exhibitionTitle.style.opacity = '1';
+
+    exhibition.addEventListener('click', function () {
+        exhibition.style.width = '100%';
+        exhibition.style.background = 'rgba(0, 0, 0, 0)';
+        const planItemDescr = document.querySelector('.plan-item__descr');
+        const planItemText = document.querySelector('.plan-item__text');
+        if (planItemDescr && planItemText) {
+            planItemDescr.style.display = 'block';
+            planItemText.style.display = 'block';
+        }
+        const planItemText2 = document.querySelector('.plan-item__text2');
+        if (planItemText2) {
+            planItemText2.style.display = 'none';
+        }
+    });
+    metauniverse.addEventListener('click', function () {
+        metauniverse.style.width = '100%';
+        metauniverse.style.background = 'rgba(0, 0, 0, 0)';
+        const planItemDescr = document.querySelector('.plan-item__descr');
+        const planItemText = document.querySelector('.plan-item__text');
+        if (planItemDescr && planItemText) {
+            planItemDescr.style.display = 'block';
+            planItemText.style.display = 'block';
+        }
+        const planItemText2 = document.querySelector('.plan-item__text2');
+        if (planItemText2) {
+            planItemText2.style.display = 'none';
+        }
+    });
+    city.addEventListener('click', function () {
+        city.style.width = '100%';
+        city.style.background = 'rgba(0, 0, 0, 0)';
+        const planItemDescr = document.querySelector('.plan-item__descr');
+        const planItemText = document.querySelector('.plan-item__text');
+        if (planItemDescr && planItemText) {
+            planItemDescr.style.display = 'block';
+            planItemText.style.display = 'block';
+        }
+        const planItemText2 = document.querySelector('.plan-item__text2');
+        if (planItemText2) {
+            planItemText2.style.display = 'none';
+        }
+    });
 }
 
 
