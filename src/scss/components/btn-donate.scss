@@ -13,4 +13,8 @@
   border-radius: 20px;
   cursor: pointer;
   color: $base-color;
+  transition: 0.3s linear;
+  &:hover{
+    background-color: rgba(126, 36, 36, 0.8);
+  }
 }
