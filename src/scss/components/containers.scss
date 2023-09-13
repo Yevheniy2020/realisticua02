@@ -1,5 +1,8 @@
 @import "../constants/variables";
 
+body{
+  background-color: $back-color;
+}
 [class*="-container"] {
   max-width: 1230px;
   width: 100%;

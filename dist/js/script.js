@@ -1,3 +1,4 @@
+AOS.init();
 const headerWrapper = document.querySelector('.header-wrapper__logo');
 const headerBlur = document.querySelector('.header-wrapper__blur');
 const exhibitionWrapper = document.querySelector('.exhibition-container');
