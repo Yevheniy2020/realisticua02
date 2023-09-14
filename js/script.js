@@ -62,14 +62,14 @@ const setupMobileInteractions = () => {
     Object.values(elements.exhibitions).forEach(item => {
         item.addEventListener('click', () => handleItemClick(item));
     });
+
+    elements.exhibitionBlur.style.cssText= '-webkit-backdrop-filter: blur(5px); filter: blur(5px);';
+    elements.exhibitionTitle.style.opacity = '1';
 };
 
-const toggleMenuVisibility = () => {
-    elements.headerWrapperMenu.style.top = (elements.headerWrapperMenu.style.top === '-100%') ? '0' : '-100%';
-};
+elements.headerBurger.addEventListener('click', () =>  elements.headerWrapperMenu.style.top = '0');
+elements.headerCloseMenu.addEventListener('click', () =>  elements.headerWrapperMenu.style.top = '-100%');
 
-elements.headerBurger.addEventListener('click', toggleMenuVisibility);
-elements.headerCloseMenu.addEventListener('click', toggleMenuVisibility);
 
 if (mediaQuery.matches) {
     setupMobileInteractions();
