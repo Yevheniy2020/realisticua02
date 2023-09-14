@@ -35,12 +35,14 @@ if(!mediaQuery.matches){
     headerWrapper.addEventListener('mouseout', function()
     {
         headerBlur.style.filter = 'blur(0px)';
+        headerBlur.style.cssText= '-webkit-backdrop-filter: blur(0);'
         headerBlur.style.zIndex = '0';
     });
 
     headerWrapper.addEventListener('mouseover', function()
     {
         headerBlur.style.filter = 'blur(1.5rem)';
+        headerBlur.style.cssText= '-webkit-backdrop-filter: blur(1.5rem);'
         headerBlur.style.zIndex = '10';
     });
 
@@ -52,6 +54,7 @@ if(!mediaQuery.matches){
     {
 
         exhibitionBlur.style.filter = 'blur(0px)';
+        exhibitionBlur.style.cssText= '-webkit-backdrop-filter: blur(0px);'
         exhibitionTitle.style.opacity = '0';
         teleportBtn.style.opacity = '1';
     });
@@ -60,11 +63,13 @@ if(!mediaQuery.matches){
     exhibitionWrapper.addEventListener('mouseover', function()
     {
         exhibitionBlur.style.filter = 'blur(5px)';
+        exhibitionBlur.style.cssText= '-webkit-backdrop-filter: blur(5px);'
         exhibitionTitle.style.opacity = '1';
         teleportBtn.style.opacity = '0';
     });
 }else{
     exhibitionBlur.style.filter = 'blur(5px)';
+    exhibitionBlur.style.cssText= '-webkit-backdrop-filter: blur(5px);'
     exhibitionTitle.style.opacity = '1';
 
     exhibition.addEventListener('click', function () {
