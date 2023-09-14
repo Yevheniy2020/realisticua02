@@ -62,6 +62,9 @@ const setupMobileInteractions = () => {
     Object.values(elements.exhibitions).forEach(item => {
         item.addEventListener('click', () => handleItemClick(item));
     });
+
+    elements.exhibitionBlur.style.cssText= '-webkit-backdrop-filter: blur(5px); filter: blur(5px);';
+    elements.exhibitionTitle.style.opacity = '1';
 };
 
 const toggleMenuVisibility = () => {
