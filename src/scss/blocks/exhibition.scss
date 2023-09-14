@@ -15,6 +15,7 @@
     border: 3px solid $base-color;
     padding-top: 50px;
     position: relative;
+
   }
   .wall-1{
     max-width: 1300px;
@@ -44,6 +45,7 @@
     font-weight: 400;
     line-height: 29px;
     position: absolute;
+    text-wrap: nowrap;
   }
   &__text1{
 
