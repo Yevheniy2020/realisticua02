@@ -191,7 +191,7 @@
       height: 300px;
 
       &__menu {
-        height: 500px;
+        height: 420px;
         .menu-header{
           padding-top: 25px;
           &__close{
@@ -203,8 +203,7 @@
         }
         .menu-nav{
           padding-top: 0;
-
-          gap: 15px;
+          gap: 5px;
           &__item{
             font-size: 18px;
           }
