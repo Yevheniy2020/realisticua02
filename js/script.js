@@ -1,5 +1,39 @@
 AOS.init();
 
+// const galleryItems = document.querySelectorAll('.gallery-item');
+//
+// galleryItems.forEach(item => {
+//     item.classList.remove('gallery-item_relative');
+// });
+// const test = document.querySelector('.testfff');
+// const rel = document.querySelector('.gallery-item_relative');
+// test.parentNode.removeChild(rel);
+// console.log(test);
+document.querySelector('.project').addEventListener("mousemove", (e) => {
+       const gradientBackground = document.querySelector(".bg-gradient");
+       const x = e.clientX / window.innerWidth * 100;
+       const y = e.clientY / window.innerHeight * 100;
+       gradientBackground.style.background = `radial-gradient(circle at ${x}% ${y}%, transparent 1%, rgba(27,28,29,1) 30%)`;
+});
+
+document.querySelector('.mission').addEventListener("mousemove", (e) => {
+    const gradientBackground = document.querySelector(".bg-gradient1");
+    const x = e.clientX / window.innerWidth * 100;
+    const y = e.clientY / window.innerHeight * 100;
+    gradientBackground.style.background = `radial-gradient(circle at ${x}% ${y}%, transparent 1%, rgba(27,28,29,1) 30%)`;
+});
+document.querySelector('.mission').addEventListener("mouseleave", () => {
+    // Perform an action when the cursor is not over the project element
+    // For example, you can reset the background of the gradientBackground element
+    document.querySelector(".bg-gradient1").style.background = '';
+});
+
+document.querySelector('.project').addEventListener("mouseleave", () => {
+    // Perform an action when the cursor is not over the project element
+    // For example, you can reset the background of the gradientBackground element
+    document.querySelector(".bg-gradient").style.background = '';
+});
+const allElements = document.querySelectorAll('.gallery-item_relative');
 const mediaQuery = window.matchMedia('(max-width: 768px)');
 const elements = {
     headerWrapper: document.querySelector('.header-wrapper__logo'),
@@ -72,6 +106,10 @@ elements.headerCloseMenu.addEventListener('click', () =>  elements.headerWrapper
 
 
 if (mediaQuery.matches) {
+    allElements.forEach((element) => {
+        console.log(element)
+        element.classList.remove('gallery-item_relative');
+    });
     setupMobileInteractions();
 } else {
     setupDesktopInteractions();
