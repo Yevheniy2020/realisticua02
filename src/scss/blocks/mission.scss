@@ -3,9 +3,10 @@
 
 
 .mission{
+  position: relative;
   font-family: "Neuropol", sans-serif;
   padding-bottom: 150px;
-  background-color: $back-color;
+  background: linear-gradient(180deg, rgba(255,39,39,1) 0%, rgba(255,175,0,1) 50%, rgba(255,255,255,1) 100%);
   &-flex{
     gap: 30px;
   }
