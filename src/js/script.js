@@ -10,6 +10,12 @@ console.log('412')
 // const rel = document.querySelector('.gallery-item_relative');
 // test.parentNode.removeChild(rel);
 // console.log(test);
+document.addEventListener("mousemove", (e) => {
+    const gradientBackground = document.querySelector(".bg-gradient");
+    const x = e.clientX / window.innerWidth * 100;
+    const y = e.clientY / window.innerHeight * 100;
+    gradientBackground.style.background = `radial-gradient(circle at ${x}% ${y}%, transparent 1%, rgba(27,28,29,1) 30%)`;
+});
 
 
 const allElements = document.querySelectorAll('.gallery-item_relative');
