@@ -1,7 +1,7 @@
 @import "../constants/variables";
-
+@import "../constants/breakpoints";
 .btn-donate{
-  background-color: rgba(126, 36, 36, 1);;
+  background-color: rgba(126, 36, 36, 1);
   width: 188px;
   height: 44px;
   font-size: 20px;
@@ -16,5 +16,74 @@
   transition: 0.3s linear;
   &:hover{
     background-color: rgba(126, 36, 36, 0.8);
+  }
+}
+
+.anhor{
+  position: fixed;
+  top: 50%;
+  right: 165px;
+  transform: translateY(-50%);
+}
+
+.btn-donate-anchor{
+  background: rgba(126, 36, 36, 1);
+  transition: 0.3s all ease;
+  position: relative;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  &:hover{
+    padding-left: 90px;
+    border-radius: 50px;
+    span{
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  span{
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-top: 4px;
+    font-family: "FixelText", sans-serif;
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+  }
+  img{
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: $desktopSemiLarge){
+  .anhor{
+    right: 60px;
+  }
+}
+
+@media (max-width: $desktopMedium){
+  .anhor{
+    right: 30px;
+  }
+}
+
+@media (max-width: $tablet){
+  .anhor{
+    right: 15px;
+  }
+}
+
+@media (max-width: $mobileSmall){
+  .anhor{
+    top: 135px;
   }
 }

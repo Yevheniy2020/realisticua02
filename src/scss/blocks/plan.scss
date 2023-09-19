@@ -58,6 +58,7 @@
 
     }
     &_exhibition {
+      transition: 0.5s all ease;
       background: #7E2424;
       &:hover {
         width: 250%;
@@ -74,6 +75,8 @@
       }
     }
     &_metauniverse {
+      transition: 0.5s all ease;
+
       background: #CF6565;
       &:hover {
         width: 250%;
@@ -90,6 +93,8 @@
       }
     }
     &_city {
+      transition: 0.5s all ease;
+
       background: #E50202;
 
       &:hover {

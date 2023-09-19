@@ -81,6 +81,11 @@
     }
   }
 }
+@media (max-width: $desktopSemiMedium) {
+  .mission{
+    padding-bottom: 50px;
+  }
+}
 
 @media (max-width: $desktop) {
   .mission {

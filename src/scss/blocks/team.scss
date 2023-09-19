@@ -14,8 +14,7 @@
   &-wrapper{
     position: relative;
     z-index: 100000;
-    background: url("../../img/team/team.png")  50%/contain no-repeat;
-    //max-width: 1264px;
+    background: url("../img/team/team.png")  50%/contain no-repeat;
     width: 100%;
     margin: 0 auto;
     height: auto;
@@ -107,6 +106,12 @@
       height: 330px;
       width: auto;
     }
+  }
+}
+@media (max-width: $desktopSemiMedium) {
+  .team{
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
 

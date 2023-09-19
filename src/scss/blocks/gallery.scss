@@ -29,7 +29,25 @@
     padding-bottom: 56px;
     background-color: $gallery-red;
   }
+
+  .gallery-item_relative{
+    &:hover{
+      .gallery-item__img {
+        opacity: 0;
+        display: none;
+      }
+      .gallery-item__img_hover{
+        opacity: 1;
+        display: block;
+      }
+    }
+  }
+
   &-item{
+    &__img_hover{
+      display: none;
+      opacity: 0;
+    }
     position: relative;
     &__img_phone{
       display: none;
@@ -47,9 +65,17 @@
     &__number_2{
       top: 15px;
     }
-    &__img{
-
-    }
+    //&__img{
+    //  &:hover{
+    //    display: none;
+    //    &_hover{
+    //      display: block;
+    //    }
+    //  }
+    //  &_hover{
+    //    display: none;
+    //  }
+    //}
     &__inst{
       font-family: "FixelText", sans-serif;
       font-size: 16px;

@@ -1,5 +1,18 @@
 AOS.init();
 
+console.log('412')
+// const galleryItems = document.querySelectorAll('.gallery-item');
+//
+// galleryItems.forEach(item => {
+//     item.classList.remove('gallery-item_relative');
+// });
+// const test = document.querySelector('.testfff');
+// const rel = document.querySelector('.gallery-item_relative');
+// test.parentNode.removeChild(rel);
+// console.log(test);
+
+
+const allElements = document.querySelectorAll('.gallery-item_relative');
 const mediaQuery = window.matchMedia('(max-width: 768px)');
 const elements = {
     headerWrapper: document.querySelector('.header-wrapper__logo'),
@@ -72,6 +85,10 @@ elements.headerCloseMenu.addEventListener('click', () =>  elements.headerWrapper
 
 
 if (mediaQuery.matches) {
+    allElements.forEach((element) => {
+        console.log(element)
+        element.classList.remove('gallery-item_relative');
+    });
     setupMobileInteractions();
 } else {
     setupDesktopInteractions();

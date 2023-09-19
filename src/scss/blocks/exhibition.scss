@@ -110,6 +110,9 @@
 
 @media (max-width: $desktopSemiMedium) {
   .exhibition{
+    &-container{
+      height: 660px;
+    }
     .wall-1, .wall-2{
       border: none;
     }

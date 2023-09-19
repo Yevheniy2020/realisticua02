@@ -50,6 +50,14 @@
   }
 }
 
+
+@media (max-width: $desktopSemiMedium) {
+  .project{
+    &-footer{
+      padding: 86px 0 37px 0;
+    }
+  }
+}
 @media (max-width: $mobileMedium) {
   .project{
     padding-top: 50px;
