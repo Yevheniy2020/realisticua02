@@ -17,9 +17,11 @@
     display: flex;
     position: relative;
     justify-content: left;
-    padding-top: 35px;
+    padding-top: 25px;
 
     &__logo{
+      max-width: 50px;
+      width: 100%;
       position: absolute;
       top: 28px;
       left: 50%;
@@ -41,15 +43,18 @@
 
       &__burger{
         display: block;
-        width: 31px;
-        height:6.2px;
+        width: 47px;
+        height:47px;
         cursor: pointer;
         position: relative;
+        border: 1px solid $base-color;
+        border-radius: 50%;
         &::after{
           content: "";
           position: absolute;
-          top: 0;
-          left: 0;
+          top: 45%;
+          left: 50%;
+          transform: translate(-50%, -50%);
           width: 31px;
           height: 1.25px;
           background-color: $base-color;
@@ -57,10 +62,11 @@
         &::before{
           content: "";
           position: absolute;
-          top: 3.7px;
-          left: 0;
+          top: 55%;
+          left: 50%;
+          transform: translate(-50%, -50%);
           width: 31px;
-          height: 1.25px;
+          height: 2.25px;
           background-color: $base-color;
         }
       }
@@ -121,34 +127,46 @@
       height: 100%;
       transition: 0.3s linear all;
     }
-
+    .menu-content{
+      display: flex;
+      padding-top: 65px;
+      justify-content: space-between;
+    }
     &__menu {
-      background-color: #AE4C4C;
+      background-color: $base-color;
       position: absolute;
       top: -100%;
       left: 0;
       width: 100%;
-      height: 100%;
-      z-index: 100;
+      height: 544px;
+      z-index: 1500;
       transition: 0.5s linear all;
-      .menu-header{
-        padding-top: 65px;
+      .menu-left{
         font-family: "FixelText", sans-serif;
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
-        align-items: center;
         &__close{
-          font-size: 32px;
-          font-weight: 400;
-          line-height: 44px;
-          color: $back-color;
+         max-width: 47px;
+          width: 100%;
+          height: auto;
           cursor: pointer;
         }
+      }
+      .menu-right{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+        .menu-contacts{
+          display: flex;
+          gap: 20px;
+        }
         &__logo{
-          font-size: 32px;
-          font-weight: 400;
-          line-height: 44px;
-          color: $back-color;
+          padding-top: 15px;
+          max-width: 220px;
+          width: 100%;
+          height: auto;
         }
       }
       .menu-nav{
@@ -162,6 +180,7 @@
           font-size: 32px;
           font-weight: 400;
           line-height: 38px;
+          text-transform: uppercase;
         }
       }
     }
@@ -185,30 +204,39 @@
   }
 }
 
+
+@media (max-width: $tablet) {
+  .header {
+    &-wrapper {
+      .menu-right{
+        &__logo{
+          display: none;
+        }
+      }
+    }
+  }
+}
 @media (max-width: $mobileMedium) {
   .header {
     height: 300px;
     &-wrapper {
       height: 300px;
-
+      .menu-content{
+        padding-top: 25px;
+        .menu-contacts{
+          gap: 10px;
+        }
+      }
+      .menu-nav{
+        padding-top: 30px;
+        gap: 5px;
+        &__item{
+          font-size: 16px;
+        }
+      }
       &__menu {
-        height: 420px;
-        .menu-header{
-          padding-top: 25px;
-          &__close{
+        height: 320px;
 
-          }
-          &__logo{
-            display: none;
-          }
-        }
-        .menu-nav{
-          padding-top: 0;
-          gap: 5px;
-          &__item{
-            font-size: 18px;
-          }
-        }
       }
     }
     &-bottom{
@@ -225,7 +253,7 @@
     }
     &-top {
       .header-nav {
-        gap: 30px;
+        gap: 10px;
         &__language {
           font-size: 12px;
         }

@@ -44,7 +44,7 @@ const elements = {
     teleportBtn: document.querySelector('.teleport-btn'),
     headerBurger: document.querySelector('.header-nav__burger'),
     headerWrapperMenu: document.querySelector('.header-wrapper__menu'),
-    headerCloseMenu: document.querySelector('.menu-header__close'),
+    headerCloseMenu: document.querySelector('.menu-left__close'),
     exhibitions: {
         exhibition: document.querySelector('.plan-item_exhibition'),
         metauniverse: document.querySelector('.plan-item_metauniverse'),

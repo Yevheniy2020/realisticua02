@@ -59,7 +59,7 @@
     }
     &_exhibition {
       transition: 0.5s all ease;
-      background: #7E2424;
+      background: url("../../img/service/11.jpg") 0 0/cover no-repeat;
       &:hover {
         width: 250%;
         background: rgba(0, 0, 0, 0);
@@ -76,8 +76,7 @@
     }
     &_metauniverse {
       transition: 0.5s all ease;
-
-      background: #CF6565;
+      background: url("../../img/service/22.jpg")  0 0/cover no-repeat;
       &:hover {
         width: 250%;
         background: rgba(0, 0, 0, 0);
@@ -94,9 +93,7 @@
     }
     &_city {
       transition: 0.5s all ease;
-
-      background: #E50202;
-
+      background: url("../../img/service/33.jpg")  0 0/cover no-repeat;
       &:hover {
         width: 250%;
         background: rgba(0, 0, 0, 0);

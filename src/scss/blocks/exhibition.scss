@@ -10,6 +10,7 @@
     padding: 20px 0;
   }
   .wall{
+    border-radius: 15px;
     width: 100%;
     margin: 0 auto;
     border: 3px solid $base-color;
@@ -91,21 +92,15 @@
   }
 }
 .teleport-btn{
-  width: 200px;
-  height: 200px;
+  max-width: 200px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50%;
-  background-color: #7E2424 ;
-  font-family: "Neuropol", sans-serif;
-  font-size: 24px;
-  font-weight: 400;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  transition: 0.3s linear all;
+  animation: rotate 6s linear infinite;
 }
 
 @media (max-width: $desktopSemiMedium) {
