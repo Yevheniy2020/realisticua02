@@ -39,6 +39,11 @@
       .gallery-item__img_hover{
         opacity: 1;
         display: block;
+        &_7{
+          img{
+            max-height: 600px;
+          }
+        }
       }
     }
   }
@@ -65,17 +70,7 @@
     &__number_2{
       top: 15px;
     }
-    //&__img{
-    //  &:hover{
-    //    display: none;
-    //    &_hover{
-    //      display: block;
-    //    }
-    //  }
-    //  &_hover{
-    //    display: none;
-    //  }
-    //}
+
     &__inst{
       font-family: "FixelText", sans-serif;
       font-size: 16px;
@@ -152,6 +147,13 @@
 
 @media (max-width: $desktopSemiMedium){
   .gallery{
+    &-item_relative {
+      .gallery-item__img_hover {
+        &_7 {
+          max-width: 600px;
+        }
+      }
+    }
     &-item_2{
       padding-right: 0;
     }
