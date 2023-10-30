@@ -1,41 +1,8 @@
 AOS.init();
 
-// const galleryItems = document.querySelectorAll('.gallery-item');
-//
-// galleryItems.forEach(item => {
-//     item.classList.remove('gallery-item_relative');
-// });
-// const test = document.querySelector('.testfff');
-// const rel = document.querySelector('.gallery-item_relative');
-// test.parentNode.removeChild(rel);
-// console.log(test);
-// document.querySelector('.project').addEventListener("mousemove", (e) => {
-//        const gradientBackground = document.querySelector(".bg-gradient");
-//        const x = e.clientX / window.innerWidth * 100;
-//        const y = e.clientY / window.innerHeight * 100;
-//        gradientBackground.style.background = `radial-gradient(circle at ${x}% ${y}%, transparent 1%, rgba(27,28,29,1) 30%)`;
-// });
-//
-// document.querySelector('.mission').addEventListener("mousemove", (e) => {
-//     const gradientBackground = document.querySelector(".bg-gradient1");
-//     const x = e.clientX / window.innerWidth * 100;
-//     const y = e.clientY / window.innerHeight * 100;
-//     gradientBackground.style.background = `radial-gradient(circle at ${x}% ${y}%, transparent 1%, rgba(27,28,29,1) 30%)`;
-// });
-// document.querySelector('.mission').addEventListener("mouseleave", () => {
-//     // Perform an action when the cursor is not over the project element
-//     // For example, you can reset the background of the gradientBackground element
-//     document.querySelector(".bg-gradient1").style.background = '';
-// });
-//
-// document.querySelector('.project').addEventListener("mouseleave", () => {
-//     // Perform an action when the cursor is not over the project element
-//     // For example, you can reset the background of the gradientBackground element
-//     document.querySelector(".bg-gradient").style.background = '';
-// });
-const allElements = document.querySelectorAll('.gallery-item_relative');
-const mediaQuery = window.matchMedia('(max-width: 768px)');
-const elements = {
+ const galleryItems = document.querySelectorAll('.gallery-item_relative');
+ const mediaQuery = window.matchMedia('(max-width: 768px)');
+ const elements = {
     headerWrapper: document.querySelector('.header-wrapper__logo'),
     headerBlur: document.querySelector('.header-wrapper__blur'),
     exhibitionWrapper: document.querySelector('.exhibition-container'),
@@ -55,6 +22,9 @@ const menuNavItems = document.querySelectorAll('.menu-nav__link');
 menuNavItems.forEach(item => {
     item.addEventListener('click', () => elements.headerWrapperMenu.style.top = '-100%');
 });
+
+elements.headerBurger.addEventListener('click', () =>  elements.headerWrapperMenu.style.top = '0');
+
 
 const setupDesktopInteractions = () => {
     elements.headerWrapper.addEventListener('mouseout', () => {
@@ -100,12 +70,8 @@ const setupMobileInteractions = () => {
     elements.exhibitionTitle.style.opacity = '1';
 };
 
-elements.headerBurger.addEventListener('click', () =>  elements.headerWrapperMenu.style.top = '0');
-
-
 if (mediaQuery.matches) {
-    allElements.forEach((element) => {
-        console.log(element)
+    galleryItems.forEach((element) => {
         element.classList.remove('gallery-item_relative');
     });
     setupMobileInteractions();
@@ -125,17 +91,17 @@ const slider = tns({
         660: { edgePadding: 20, items: 3 },
         550: { edgePadding: 50, items: 2 },
         480: { gutter: 0, items: 2 },
-        375: { edgePadding: 0, gutter: 40, items: 2 },
+        375: { edgePadding: 0, gutter: 65, items: 2 },
         320: { edgePadding: 0, gutter: 110, items: 2 },
     },
     slideBy: 'page',
     controls: false,
     autoplay: false,
     mouseDrag: true,
+    preventScrollOnTouch: 'auto',
 });
 
 document.querySelector('.my-slider_arrow').onclick = function () {
     slider.goTo('prev');
 };
 
-//my-slider_arrow
