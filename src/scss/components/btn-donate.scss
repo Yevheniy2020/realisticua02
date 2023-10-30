@@ -88,3 +88,13 @@
     top: 135px;
   }
 }
+
+@media (max-width: $mobileSemiMedium){
+  .btn-donate-anchor{
+    padding: 5px;
+    img{
+      width: 20px;
+      height: 20px;
+    }
+  }
+}

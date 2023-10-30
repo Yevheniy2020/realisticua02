@@ -2,17 +2,12 @@
 @import "../constants/animations";
 @import "../constants/breakpoints";
 
-
 .project{
-
   img{
     max-width: 600px;
     width: 100%;
   }
-
-  background: linear-gradient(180deg, rgba(255,39,39,1) 0%, rgba(255,175,0,1) 50%, rgba(255,255,255,1) 100%);
-  position: relative;
-  z-index: 1000;
+  background: $back-color;
   font-family: "Neuropol", sans-serif;
   padding-top: 141px;
   padding-bottom: 150px;
@@ -80,6 +75,13 @@
       transform: translateX(-50%);
     }
   }
+  &__title_mobile{
+    display: none;
+    font-family: "Neuropol", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
 }
 
 
@@ -103,25 +105,17 @@
     }
   }
 }
-//@media (max-width: $mobileMedium) {
-//  .project{
-//    padding-top: 50px;
-//    &-main{
-//      &__title{
-//        font-size: 18px;
-//      }
-//      &__text{
-//        padding-top: 10px;
-//        font-size: 14px;
-//      }
-//      &__subtitle{
-//        font-size: 14px;
-//      }
-//    }
-//    &-footer{
-//      padding-top: 30px;
-//      padding-bottom: 54px;
-//    }
-//  }
-//}
+
+@media (max-width: $mobileSmall) {
+  .project{
+    padding-top: 50px;
+    padding-bottom: 0;
+    &-header, &-footer{
+      display: none;
+    }
+    &__title_mobile{
+      display: block;
+    }
+  }
+}
 

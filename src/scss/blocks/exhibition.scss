@@ -70,16 +70,25 @@
     transform: rotate(180deg) translateX(50%);
   }
   &__title{
+    max-width: 100%;
+    overflow: hidden;
+    flex-wrap: wrap;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: "Neuropol", sans-serif;
-    font-size: 44px;
+    font-size: 30px;
     font-weight: 400;
-    line-height: 17px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 30px;
     opacity: 0;
     transition: 0.3s linear all;
+    color: $base-color;
+    span{
+      color: #AE4C4C;
+    }
   }
   &__blur {
     backdrop-filter: blur(0px);
@@ -124,7 +133,7 @@
     }
     &__title{
       top: 56%;
-      text-wrap: nowrap;
+      font-size: 24px;
     }
     .wall-3{
       max-width: 720px;
@@ -198,6 +207,7 @@
     }
     &__title{
       font-size: 14px;
+      line-height: 16px;
     }
     &-container{
       height: 340px;

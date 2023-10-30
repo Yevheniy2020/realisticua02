@@ -33,6 +33,16 @@
 }
 
 .my-slider{
+  position: relative;
+  &_arrow{
+    cursor: pointer;
+    z-index: 100;
+    width: 30px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: rotateY(-50%);
+  }
   &__item{
     &:hover {
       .my-slider__item-container1{
@@ -114,6 +124,13 @@
     padding-bottom: 50px;
   }
 }
+@media (max-width: $desktop) {
+  .my-slider {
+    &_arrow{
+      display: none;
+    }
+  }
+}
 
 @media (max-width: $tablet) {
   .team {
@@ -138,3 +155,4 @@
     }
   }
 }
+

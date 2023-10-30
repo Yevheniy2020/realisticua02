@@ -9,30 +9,30 @@ AOS.init();
 // const rel = document.querySelector('.gallery-item_relative');
 // test.parentNode.removeChild(rel);
 // console.log(test);
-document.querySelector('.project').addEventListener("mousemove", (e) => {
-       const gradientBackground = document.querySelector(".bg-gradient");
-       const x = e.clientX / window.innerWidth * 100;
-       const y = e.clientY / window.innerHeight * 100;
-       gradientBackground.style.background = `radial-gradient(circle at ${x}% ${y}%, transparent 1%, rgba(27,28,29,1) 30%)`;
-});
-
-document.querySelector('.mission').addEventListener("mousemove", (e) => {
-    const gradientBackground = document.querySelector(".bg-gradient1");
-    const x = e.clientX / window.innerWidth * 100;
-    const y = e.clientY / window.innerHeight * 100;
-    gradientBackground.style.background = `radial-gradient(circle at ${x}% ${y}%, transparent 1%, rgba(27,28,29,1) 30%)`;
-});
-document.querySelector('.mission').addEventListener("mouseleave", () => {
-    // Perform an action when the cursor is not over the project element
-    // For example, you can reset the background of the gradientBackground element
-    document.querySelector(".bg-gradient1").style.background = '';
-});
-
-document.querySelector('.project').addEventListener("mouseleave", () => {
-    // Perform an action when the cursor is not over the project element
-    // For example, you can reset the background of the gradientBackground element
-    document.querySelector(".bg-gradient").style.background = '';
-});
+// document.querySelector('.project').addEventListener("mousemove", (e) => {
+//        const gradientBackground = document.querySelector(".bg-gradient");
+//        const x = e.clientX / window.innerWidth * 100;
+//        const y = e.clientY / window.innerHeight * 100;
+//        gradientBackground.style.background = `radial-gradient(circle at ${x}% ${y}%, transparent 1%, rgba(27,28,29,1) 30%)`;
+// });
+//
+// document.querySelector('.mission').addEventListener("mousemove", (e) => {
+//     const gradientBackground = document.querySelector(".bg-gradient1");
+//     const x = e.clientX / window.innerWidth * 100;
+//     const y = e.clientY / window.innerHeight * 100;
+//     gradientBackground.style.background = `radial-gradient(circle at ${x}% ${y}%, transparent 1%, rgba(27,28,29,1) 30%)`;
+// });
+// document.querySelector('.mission').addEventListener("mouseleave", () => {
+//     // Perform an action when the cursor is not over the project element
+//     // For example, you can reset the background of the gradientBackground element
+//     document.querySelector(".bg-gradient1").style.background = '';
+// });
+//
+// document.querySelector('.project').addEventListener("mouseleave", () => {
+//     // Perform an action when the cursor is not over the project element
+//     // For example, you can reset the background of the gradientBackground element
+//     document.querySelector(".bg-gradient").style.background = '';
+// });
 const allElements = document.querySelectorAll('.gallery-item_relative');
 const mediaQuery = window.matchMedia('(max-width: 768px)');
 const elements = {
@@ -42,9 +42,8 @@ const elements = {
     exhibitionTitle: document.querySelector('.exhibition__title'),
     exhibitionBlur: document.querySelector('.exhibition__blur'),
     teleportBtn: document.querySelector('.teleport-btn'),
-    headerBurger: document.querySelector('.header-nav__burger'),
-    headerWrapperMenu: document.querySelector('.header-wrapper__menu'),
-    headerCloseMenu: document.querySelector('.menu-left__close'),
+    headerBurger: document.querySelector('.header-top_mobile__burger'),
+    headerWrapperMenu: document.querySelector('.header-menu'),
     exhibitions: {
         exhibition: document.querySelector('.plan-item_exhibition'),
         metauniverse: document.querySelector('.plan-item_metauniverse'),
@@ -52,7 +51,7 @@ const elements = {
     },
 };
 
-const menuNavItems = document.querySelectorAll('.menu-nav__item');
+const menuNavItems = document.querySelectorAll('.menu-nav__link');
 menuNavItems.forEach(item => {
     item.addEventListener('click', () => elements.headerWrapperMenu.style.top = '-100%');
 });
@@ -102,7 +101,6 @@ const setupMobileInteractions = () => {
 };
 
 elements.headerBurger.addEventListener('click', () =>  elements.headerWrapperMenu.style.top = '0');
-elements.headerCloseMenu.addEventListener('click', () =>  elements.headerWrapperMenu.style.top = '-100%');
 
 
 if (mediaQuery.matches) {
@@ -118,10 +116,10 @@ if (mediaQuery.matches) {
 const slider = tns({
     container: '.my-slider',
     responsive: {
-        1920: { edgePadding: 0, gutter: 0, items: 5 },
-        1600: { edgePadding: 0, gutter: 0, items: 5 },
-        1400: { edgePadding: 0, gutter: 0, items: 4 },
-        1200: { items: 3 },
+        1920: { edgePadding: 30, gutter: 0, items: 5 },
+        1600: { edgePadding: 30, gutter: 0, items: 4 },
+        1400: { edgePadding: 30, gutter: 0, items: 4 },
+        1200: { edgePadding: 30, items: 3 },
         1024: { edgePadding: 100, items: 2 },
         768: { edgePadding: 50, items: 2 },
         660: { edgePadding: 20, items: 3 },
@@ -135,3 +133,9 @@ const slider = tns({
     autoplay: false,
     mouseDrag: true,
 });
+
+document.querySelector('.my-slider_arrow').onclick = function () {
+    slider.goTo('prev');
+};
+
+//my-slider_arrow
