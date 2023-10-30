@@ -30,7 +30,9 @@
       }
     }
     &__text {
-      display: none;
+      opacity: 0;
+      transition: 0.7s all ease;
+      //display: none;
       font-size: 24px;
       font-weight: 400;
       line-height: 29px;
@@ -49,7 +51,9 @@
     }
 
     &__descr {
-      display: none;
+      //display: none;
+      opacity: 0;
+      transition: 0.7s all ease;
       padding-top: 20px;
       font-size: 16px;
       font-weight: 400;
@@ -58,53 +62,63 @@
 
     }
     &_exhibition {
-      transition: 0.5s all ease;
-      background: url("../../img/service/11.jpg") 0 0/cover no-repeat;
+      transition: 0.7s all ease;
+      background: url("../img/service/11.jpg") 0 0/cover no-repeat;
       &:hover {
         width: 250%;
         background: rgba(0, 0, 0, 0);
         .plan-item__descr {
-          display: block;
+          //display: block;
+          opacity: 1;
         }
         .plan-item__text {
-          display: block;
+          //display: block;
+          opacity: 1;
         }
         .plan-item__text2 {
-          display: none;
+          //display: none;
+          opacity: 0;
         }
       }
     }
     &_metauniverse {
-      transition: 0.5s all ease;
-      background: url("../../img/service/22.jpg")  0 0/cover no-repeat;
+      transition: 0.7s all ease;
+      background: url("../img/service/22.jpg")  0 0/cover no-repeat;
       &:hover {
         width: 250%;
         background: rgba(0, 0, 0, 0);
         .plan-item__descr {
-          display: block;
+          //display: block;
+          opacity: 1;
         }
         .plan-item__text {
-          display: block;
+          //display: block;
+          opacity: 1;
         }
         .plan-item__text2 {
-          display: none;
+          //display: none;
+          opacity: 0;
         }
       }
     }
     &_city {
-      transition: 0.5s all ease;
-      background: url("../../img/service/33.jpg")  0 0/cover no-repeat;
+      transition: 0.7s all ease;
+      background: url("../img/service/33.jpg")  0 0/cover no-repeat;
       &:hover {
         width: 250%;
+        transition: 0.7s all ease;
         background: rgba(0, 0, 0, 0);
         .plan-item__descr {
-          display: block;
+          //display: block;
+          opacity: 1;
         }
         .plan-item__text {
-          display: block;
+          //display: block;
+          opacity: 1;
         }
         .plan-item__text2 {
-          display: none;
+          //display: none;
+          opacity: 0;
         }
       }
     }
