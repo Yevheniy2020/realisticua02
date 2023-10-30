@@ -1,0 +1,14 @@
+@import "../../constants/variables";
+@import "../../constants/breakpoints";
+
+@media (max-width: $mobileMedium) {
+  .emotions{
+    &__text{
+      font-size: 15px;
+      line-height: 20.7px;
+    }
+    &__title{
+      font-size: 18px;
+    }
+  }
+}

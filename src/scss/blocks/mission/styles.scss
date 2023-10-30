@@ -1,0 +1,82 @@
+@import "../../constants/variables";
+@import "../../constants/breakpoints";
+
+.mission{
+  position: relative;
+  font-family: "Neuropol", sans-serif;
+  padding-bottom: 150px;
+  &-flex{
+    gap: 30px;
+  }
+  &-left{
+    &__img{
+      max-width: 445px;
+    }
+    .mission-inner{
+      display: none;
+      position: relative;
+      text-transform: uppercase;
+      &__first{
+        position: absolute;
+        top: 0;
+        left: 5px;
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 43px;
+
+      }
+      &__second{
+
+        position: absolute;
+        bottom: 10px;
+        right: 5px;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+      }
+    }
+  }
+  &-right{
+    max-width: 634px;
+    &__title{
+      display: flex;
+      gap: 20px;
+      align-items: end;
+      padding-bottom: 60px;
+      span:nth-child(1){
+        font-size: 128px;
+        font-weight: 400;
+        line-height: 154px;
+      }
+      span:nth-child(2){
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+      }
+    }
+    &__text{
+      font-family: "FixelText", sans-serif;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 28px;
+      padding-bottom: 60px;
+
+    }
+    &__subtitle{
+      display: flex;
+      gap: 20px;
+      align-items: end;
+      flex-direction: row-reverse;
+      span:nth-child(1){
+        font-size: 64px;
+        font-weight: 400;
+        line-height: 77px;
+      }
+      span:nth-child(2){
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+      }
+    }
+  }
+}

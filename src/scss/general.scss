@@ -1,23 +1,51 @@
+//reset
 @import "./reset/reset";
 @import "./reset/theme";
 
-@import "constants/variables";
-
+//components
 @import "components/btn-donate";
 @import "components/containers";
 
-@import "blocks/header";
-@import "blocks/project";
-@import "blocks/exhibition";
-@import "blocks/mission";
-@import "blocks/plan";
-@import "blocks/emotions";
-@import "blocks/gallery";
-@import "blocks/donate";
-@import "blocks/team";
-@import "blocks/ukrainians";
-@import "blocks/partners";
-@import "blocks/footer";
-@import "blocks/privacy";
+//blocks
+@import "blocks/header/styles";
+@import "blocks/header/media";
+
+@import "blocks/project/styles";
+@import "blocks/project/media";
+
+@import "blocks/exhibition/styles";
+@import "blocks/exhibition/media";
+
+@import "blocks/mission/styles";
+@import "blocks/mission/media";
+
+@import "blocks/plan/styles";
+@import "blocks/plan/media";
+
+@import "blocks/emotions/styles";
+@import "blocks/emotions/media";
+
+@import "blocks/gallery/styles";
+@import "blocks/gallery/media";
+
+@import "blocks/donate/styles";
+@import "blocks/donate/media";
+
+@import "blocks/team/styles";
+@import "blocks/team/media";
+
+@import "blocks/ukrainians/styles";
+@import "blocks/ukrainians/media";
+
+@import "blocks/partners/styles";
+@import "blocks/partners/media";
+
+@import "blocks/footer/styles";
+@import "blocks/footer/media";
+
+@import "blocks/privacy/styles";
+@import "blocks/privacy/media";
+
+
 
 

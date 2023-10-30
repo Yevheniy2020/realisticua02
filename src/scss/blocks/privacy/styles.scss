@@ -1,0 +1,39 @@
+@import "../../constants/variables";
+@import "../../constants/breakpoints";
+
+
+.privacy {
+  background: $base-color;
+  padding: 15px 0;
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1230px;
+    padding: 0 15px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  &-language {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    span {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 17px;
+      color: $back-color;
+    }
+  }
+  &-policy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    span {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 143%;
+      color: $back-color;
+    }
+  }
+}

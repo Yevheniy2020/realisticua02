@@ -1,0 +1,49 @@
+@import "../../constants/variables";
+@import "../../constants/breakpoints";
+
+@media (max-width: $desktop){
+  .footer{
+    &-grid{
+      grid-template-columns: 160px 160px 160px 188px;
+
+    }
+    &-item {
+
+      &_first {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: $tablet){
+  .footer{
+    &-grid {
+      grid-template-columns: 1fr 1fr;
+      row-gap: 30px;
+      justify-content: space-evenly;
+    }
+    &-item {
+      max-width: 100%;
+    }
+    &-item_btn {
+      grid-row-start: 1;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      align-items: center;
+      max-width: unset;
+    }
+    .btn-footer {
+      width: auto;
+    }
+  }
+}
+
+@media (max-width: $mobileMedium){
+  .footer{
+    .social{
+      margin-top: 10px;
+      justify-content: center;
+    }
+  }
+}

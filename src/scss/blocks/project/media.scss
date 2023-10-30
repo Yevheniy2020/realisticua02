@@ -1,0 +1,43 @@
+@import "../../constants/variables";
+@import "../../constants/breakpoints";
+
+@media (max-width: $tablet) {
+  .project{
+    padding: 60px 0;
+    &-header{
+      &__title{
+        font-size: 24px;
+      }
+    }
+
+    &-footer{
+      &__title{
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+@media (max-width: $mobileSmall) {
+  .project{
+    &-main{
+      max-width: 100%;
+    }
+    padding-top: 50px;
+    padding-bottom: 0;
+    &-header, &-footer{
+      display: none;
+    }
+    &__title_mobile{
+      display: block;
+    }
+  }
+}
+
+@media (max-width: $mobileMedium) {
+  .project{
+    &-main__text{
+      font-size: 14px;
+    }
+  }
+}

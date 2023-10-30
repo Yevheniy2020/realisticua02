@@ -1,0 +1,57 @@
+@import "../../constants/variables";
+@import "../../constants/breakpoints";
+
+
+
+@media (max-width: $tablet) {
+  .header {
+    &-wrapper {
+      &__blur{
+        display: none;
+      }
+      &__logo{
+        &:hover {
+          opacity: 0;
+        }
+      }
+    }
+    &-top{
+      display: none;
+    }
+
+    &-top_mobile{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
+
+@media (max-width: $mobileMedium) {
+  .header {
+    height: 300px;
+    &-wrapper {
+      height: 300px;
+    }
+    &-top_mobile{
+      &__burger img{
+        width: 40px;
+      }
+      &__logo{
+        width: 40px;
+      }
+    }
+    &-bottom{
+      padding-bottom: 20px;
+      &__description{
+        font-size: 14px;
+      }
+      &__title{
+        font-size: 16px;
+      }
+      &__date{
+        font-size: 14px;
+      }
+    }
+  }
+}

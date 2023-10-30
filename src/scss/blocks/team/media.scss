@@ -1,0 +1,42 @@
+@import "../../constants/variables";
+@import "../../constants/breakpoints";
+
+
+
+@media (max-width: $desktopSemiMedium) {
+  .team{
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+@media (max-width: $desktop) {
+  .my-slider {
+    &_arrow{
+      display: none;
+    }
+  }
+}
+
+@media (max-width: $tablet) {
+  .team {
+    padding: 50px 0;
+    &__title{
+      padding-top: 0;
+      padding-bottom: 50px;
+    }
+  }
+  .my-slider {
+    &__item {
+      &:hover {
+        .my-slider__item-container1, .my-slider__item-container2, .my-slider__item-container3, .my-slider__item-container4, .my-slider__item-container5, .my-slider__item-container6, .my-slider__item-container7, .my-slider__item-container8, .my-slider__item-container9, .my-slider__item-container10 {
+          background-size: contain;
+          height: 200px;
+          width: auto;
+        }
+      }
+      img {
+        height: 200px;
+      }
+    }
+  }
+}
