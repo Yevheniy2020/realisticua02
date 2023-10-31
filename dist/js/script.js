@@ -57,9 +57,9 @@ const setupMobileInteractions = () => {
         const text2 = item.querySelector('.plan-item__text2');
 
         item.style.cssText = 'width: 100%; background: rgba(0, 0, 0, 0)';
-        descr.style.display = 'block';
-        text.style.display = 'block';
-        text2.style.display = 'none';
+        descr.style.opacity = '1';
+        text.style.opacity = '1';
+        text2.style.opacity = '0';
     };
 
     Object.values(elements.exhibitions).forEach(item => {
